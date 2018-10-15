@@ -1,0 +1,36 @@
+.header {
+  background-color: #333;
+  color: #c1a27a;
+}
+
+.heading {
+  grid-area: h;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.searchForm {
+  grid-area: form;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 0 25vw;
+}
+
+.input {
+  border: none;
+  border-bottom: 4px solid #c1a27a;
+  margin: 0 10px 20px;
+  padding: 20px 10px 0;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 0;
+  outline: none;
+  background-color: transparent;
+  color: #c1a27a;
+  caret-color: #c1a27a;
+  transition: color 0.3s;
+}
+
+.input:focus {
+  color: #fff;
+}

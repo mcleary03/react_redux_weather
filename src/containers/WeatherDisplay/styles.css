@@ -1,0 +1,43 @@
+table {
+  margin: 20px 15vw;
+  border-left: 2px solid #c1a27a;
+  border-right: 2px solid #c1a27a;
+}
+
+tr {
+  border-bottom: 2px solid rgb(193, 162, 122, 0.3);
+}
+
+thead tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: #c1a27a;
+  font-size: 1.2em;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  padding-bottom: 15px;
+}
+
+tbody {
+  display: block;
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+tbody tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+td {
+  padding: 10px;
+}
+
+td:first-of-type, td:first-of-type > div {
+  height: 150px;
+}
+
+tbody svg {
+  height: 100px;
+  width: 100%;
+}

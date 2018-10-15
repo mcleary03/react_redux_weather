@@ -1,0 +1,15 @@
+.Button {
+  border: none;
+  color: #c1a27a;
+  background-color: transparent;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  outline: none;
+  transition: color 0.3s;
+}
+
+.Button:hover {
+  cursor: pointer;
+  color: #fff;
+}
