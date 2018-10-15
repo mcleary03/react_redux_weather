@@ -28,6 +28,9 @@ class SearchBar extends Component {
     this.setState({ term: e.target.value })
   }
 
+  componentDidMount() {
+    this.input.focus()
+  }
 
   render() {
     return (
@@ -39,6 +42,7 @@ class SearchBar extends Component {
 
         <form className='searchForm' onSubmit={ this.handleSubmit }>
           <input className='input'
+            ref={ input => this.input = input }
             value={ this.state.term } 
             onChange={ this.updateTerm } 
           />
