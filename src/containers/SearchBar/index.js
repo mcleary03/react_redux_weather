@@ -19,7 +19,6 @@ class SearchBar extends Component {
 
   handleSubmit(e) {
     e.preventDefault()
-
     this.props.fetchWeather(this.state.term)
     this.setState({ term: '' })
   }
@@ -44,7 +43,8 @@ class SearchBar extends Component {
           <input className='input'
             ref={ input => this.input = input }
             value={ this.state.term } 
-            onChange={ this.updateTerm } 
+            onChange={ this.updateTerm }
+            placeholder='enter city or zip'
           />
           <Button type='submit'>search</Button>
         </form>

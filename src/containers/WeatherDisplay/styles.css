@@ -20,7 +20,7 @@ thead tr {
 
 tbody {
   display: block;
-  height: 60vh;
+  height: 70vh;
   overflow-y: scroll;
 }
 
@@ -41,4 +41,11 @@ td:first-of-type, td:first-of-type > div {
 tbody svg {
   height: 100px;
   width: 100%;
+}
+
+@media screen and (max-width: 925px) {
+  table {
+    width: 90vw;
+    margin: 20px 5vw;
+  }
 }

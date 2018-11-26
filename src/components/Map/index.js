@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
-const google = window.google
 
 class Map extends Component {
-  constructor(props) {
-    super(props)
-  }
 
   componentDidMount() {
+    const google = window.google
+    
     new google.maps.Map(this.refs.map, {
       zoom: 10,
       center: {

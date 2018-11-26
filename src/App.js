@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SearchBar>Get 5 Day Weather by City</SearchBar>
+        <SearchBar>5 Day Weather</SearchBar>
         <WeatherDisplay />
       </div>
     )

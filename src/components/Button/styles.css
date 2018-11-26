@@ -13,3 +13,10 @@
   cursor: pointer;
   color: #fff;
 }
+
+
+@media screen and (max-width: 610px) {
+  .Button {
+    display: none;
+  }
+}

@@ -4,13 +4,12 @@
 }
 
 .heading {
-  grid-area: h;
   margin: 0;
   padding-top: 20px;
+  font-size: 2.5em;
 }
 
 .searchForm {
-  grid-area: form;
   display: grid;
   grid-template-columns: 4fr 1fr;
   padding: 0 25vw;
@@ -23,7 +22,6 @@
   padding: 20px 10px 0;
   text-align: center;
   font-size: 2.5em;
-  line-height: 0;
   outline: none;
   background-color: transparent;
   color: #c1a27a;
@@ -33,4 +31,10 @@
 
 .input:focus {
   color: #fff;
+}
+
+@media screen and (max-width: 925px) {
+  .searchForm {
+    padding: 0 10vw
+  }
 }

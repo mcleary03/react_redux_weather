@@ -5,31 +5,16 @@ import Map from '../../components/Map'
 import './styles.css'
 
 class WeatherDisplay extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-
-    }
-
-  }
 
   renderWeather(cityData) {
-    const { name } = cityData.city
-    const { lat, lon } = cityData.city.coord
+    const { list, city: { name, coord: { lat, lon } } } = cityData
     const formatFahrenheit = tempKelvin => Math.round((tempKelvin * (9/5) - 459.67)*100)/100
 
-    const temp = cityData.list.map( weather => (
-      formatFahrenheit(weather.main.temp)
-    ))
+    const temp = list.map( weather => formatFahrenheit(weather.main.temp) )
     
-    const humidity = cityData.list.map( weather => (
-      weather.main.humidity
-    ))
+    const humidity = list.map( weather => weather.main.humidity )
     
-    const pressure = cityData.list.map( weather => (
-      weather.main.pressure
-    ))
+    const pressure = list.map( weather => weather.main.pressure )
 
     return (
       <tr key={ name }>
