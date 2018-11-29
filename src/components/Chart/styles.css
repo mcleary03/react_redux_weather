@@ -2,14 +2,14 @@
   position: relative;
 }
 
-.min {
+.max {
   position: absolute;
   top: -8px;
   left: -15px;
   font-size: 0.8em;
 }
 
-.max {
+.min {
   position: absolute;
   bottom: 35px;
   left: -15px;
